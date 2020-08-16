@@ -1,13 +1,59 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    padding: 60px;
+}
+
+input {
+    border-width: 1px;
+    font-size: 1.3rem;
+    outline: none;
+    padding: 20px 10px 10px;
+    transition: all .3s ease-in-out;
+    width: 100%;
+}
+
+input:focus {
+    color: #ffffff;
+    background-color: #4943436e;
+    border: 1px solid #ffffff;
+    transition: all .3s ease;  
+}
+
+input::placeholder {
+    
+    transition: all .3s ease;
+}
+
+input:focus::placeholder {
+    color: #fff;
+    font-size: 13px;
+    transform: translateY(-25px);
+}
+
+.card {
+    background-color: #d1d1d1;
+    border-radius: 20px;
+    height: 240px;
+    margin: 10px;
+    overflow: hidden;
+    width: 350px;
+}
+
+.card img {
+    height: 180px;
+    width: 100%;
+}
+
+.card p {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
